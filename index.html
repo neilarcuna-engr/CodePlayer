@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Player</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <div id="container">
+        <div id="titlebar">
+            <div id="title">Code Player</div>
+            <div id="runButton">
+                <button id="run">▶ Run Code</button>
+            </div>
+        </div>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#htmlContainer">HTML</a></li>
+                <li><a href="#cssContainer">CSS</a></li>
+                <li><a href="#jsContainer">JS</a></li>
+                <li><a href="#resultContainer">Result</a></li>
+            </ul>
+
+            <div class="codecontainer" id="htmlContainer">
+                <textarea class="code" id="html"><div id="test">Hello World</div></textarea>
+            </div>
+
+            <div class="codecontainer" id="cssContainer">
+                <textarea class="code" id="css">#test { background: green; color: white; padding: 20px; }</textarea>
+            </div>
+
+            <div class="codecontainer" id="jsContainer">
+                <textarea class="code" id="js">alert("JS is working!");</textarea>
+            </div>
+
+            <div class="codecontainer" id="resultContainer">
+                <div class="resultContainer">
+                    <iframe id="resultFrame"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
